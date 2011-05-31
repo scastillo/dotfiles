@@ -2,11 +2,12 @@
 # Sebastian Castillo <castillobuiles@gmail.com>
 
 function set_eternal_history {
-    export HISTTIMEFORMAT="%s "
-    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER \
-               "$(history 1)" >> ~/.bash_eternal_history'
+    [ -r ~/.bashrc_history ] && source ~/.bashrc_history
 }
 
 function main {
     set_eternal_history
 }
+
+main
+ 
