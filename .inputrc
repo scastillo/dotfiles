@@ -1,0 +1,6 @@
+$if Bash
+# to exit through calling exit function which will archive the history
+# next ones are optional: first is left for historical reasons
+  "\C-x\C-x": "exit\n"
+  "\C-x\C-w": "archive_history\n"
+$endif
