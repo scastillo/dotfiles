@@ -1,0 +1,25 @@
+[global_config]
+  window_state = maximise
+  borderless = True
+  handle_size = 1
+  title_transmit_bg_color = "#0fc800"
+[keybindings]
+[profiles]
+  [[default]]
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    background_darkness = 0.71
+    scrollback_lines = 4096
+    background_type = transparent
+    scrollbar_position = hidden
+    foreground_color = "#ffffff"
+    scroll_on_output = False
+    allow_bold = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
